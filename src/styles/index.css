@@ -1,64 +1,98 @@
-
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
-
-body{
-    margin-top:100px;
-    background-color: rgb(245, 245, 245);
-}
-.container{
-    height: 500px;
-    width: 600px;
-    background-color: white;
-    border-style:solid;
-    border-color: grey;
-    box-shadow: 10px 10px lightgray;
-}
-h2{
-    text-align:center;
-    font-size: 50px;
-    color:pink;
-    text-decoration-line: underline;
+body {
+  margin-top: 100px;
+  background-color: rgb(245, 245, 245);
 }
 
-li{
-    border:1px solid grey;
-    border-top:none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px solid rgb(255, 227, 231);
-    list-style: none;
-    padding:10px;
-    margin-left: 20px;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+h2 {
+  text-align: center;
+  font-size: 50px;
+  color: pink;
+  text-decoration-line: underline;
 }
-input{
-    margin-top: 50px;
-    border-color: palevioletred;
-    border-top: none;
-    border-left:none;
-    border-right: none;
-    outline: none;
-    font-weight: lighter;
-    font-size:20px;
-    text-align: center;
-    width:560px;
+#todolist-form {
+  height: 600px;
+  width: 600px;
+  background-color: white;
+  border-style: dashed;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
-.itemCounter{
-    font-size:16px;
+#todolist-form::-webkit-scrollbar {
+  width: 6px;
 }
-i{
-    margin-left: 250px;
-    padding-right:20px;
+#todolist-form::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+#todolist-form::-webkit-scrollbar-thumb {
+  background-color: pink;
+}
+li {
+  border: 1px solid grey;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid rgb(255, 227, 231);
+  list-style: none;
+  padding: 10px;
+  margin-left: 20px;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+button {
+  display: block;
+  align-items: center;
+  margin: 0 auto;
+  border: none;
+}
+#xallbtn {
+  background-color: red;
+  color: white;
+  border-radius: 2px;
+}
+input {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-color: palevioletred;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-weight: lighter;
+  font-size: 20px;
+  text-align: center;
+  width: 560px;
+  display: flex;
+}
+.user-input-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1px;
+}
+.itemCounter {
+  font-size: 16px;
+}
+i {
+  margin-left: 250px;
+  padding-right: 20px;
+}
+.form-user {
+  display: flex;
+}
+#user-input {
+  border-style: dashed;
+  width: 200px;
+  padding: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+#squarex {
+  text-align: center;
+  display: block;
+}
+#usericon {
+  font-size: 30px;
+  padding: 10px;
 }
